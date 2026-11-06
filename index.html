@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR" data-type="product" data-radius="soft">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="page-type" content="product">
+<meta name="site-kind" content="other">
+<title>Comfy ErgoMax — Cadeira ergonômica tela mesh preta</title>
+<meta name="description" content="Cadeira ergonômica Comfy ErgoMax: tela mesh respirável, estrutura em alumínio, base de 5 pontas e apoio lombar ajustável.">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+:root{
+  --ground:#ffffff; --ground-2:#f3f3f1; --ink:#14161a; --muted:#5a5f68;
+  --accent:#0a58ff; --dark:#011f37; --dark-ink:#eaf4ff;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --gut:clamp(20px,6vw,88px); --nav:72px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{padding-inline:var(--gut);max-width:1440px;margin-inline:auto}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;height:var(--nav);background:var(--ground);border-bottom:1px solid rgba(20,22,26,.12);z-index:20}
+.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{white-space:nowrap;font-family:var(--serif);font-size:22px;letter-spacing:-.01em;text-decoration:none;font-weight:600}
+.logo b{color:var(--accent);font-weight:600}
+.nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}
+.nav ul a{font-size:15px;font-weight:500;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .3s;padding-bottom:3px}
+.nav ul a:hover{background-size:100% 1px}
+
+/* BUTTON */
+.btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 26px;border-radius:999px;font:500 16px var(--sans);text-decoration:none;border:1px solid var(--ink);transition:transform .2s,background .2s,color .2s;cursor:pointer}
+.btn--primary{background:var(--ink);color:#fff}
+.btn--primary:hover{transform:translateY(-2px);background:var(--accent);border-color:var(--accent)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn--ghost{background:transparent;color:inherit}
+.btn--ghost:hover{transform:translateY(-2px);background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;transition:transform .25s}
+.btn:hover svg{transform:translateX(4px)}
+
+/* HERO */
+.hero{min-height:100svh;padding-top:var(--nav);position:relative;overflow:hidden;display:flex}
+.hero .wrap{flex:1;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center;gap:0;position:relative;width:100%}
+.hero__bg{position:absolute;left:50%;top:54%;translate:-50% -50%;font-family:var(--serif);font-weight:700;font-size:clamp(120px,24vw,380px);letter-spacing:-.04em;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(20,22,26,.14);white-space:nowrap;pointer-events:none;user-select:none;will-change:transform}
+.hero__text{position:relative;z-index:2;padding-block:48px}
+.eyebrow{font-size:14px;font-weight:500;color:var(--muted);margin:0 0 20px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,4.3vw,70px);line-height:1.02;letter-spacing:-.025em;margin:0 0 24px}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+h1 .w>span{display:inline-block;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*90ms + 150ms)}
+@keyframes up{to{transform:none}}
+.lead{max-width:44ch;font-size:19px;color:#2b2f36;margin:0 0 32px;opacity:0;animation:fade 1s .8s forwards}
+.hero .btn-row{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fade 1s 1s forwards}
+@keyframes fade{to{opacity:1}}
+.hero__chair{position:relative;height:calc(100svh - var(--nav) - 72px);display:flex;align-items:flex-end;justify-content:center}
+.hero__chair img{height:100%;width:auto;max-width:none;mix-blend-mode:multiply;transform:translateY(40px) scale(.96);opacity:0;animation:rise 1.4s .2s cubic-bezier(.2,.8,.2,1) forwards;will-change:transform}
+@keyframes rise{to{transform:none;opacity:1}}
+.hero__chair .float{height:100%;animation:float 7s ease-in-out infinite;will-change:transform}
+@keyframes float{50%{transform:translateY(-12px)}}
+.facts{position:absolute;left:var(--gut);bottom:28px;display:flex;gap:40px;font-size:14px;color:var(--muted);z-index:2}
+.facts b{display:block;color:var(--ink);font-size:15px;font-weight:600}
+
+/* STORY (sticky zoom) */
+.story{height:480vh;position:relative}
+.story__pin{position:sticky;top:0;height:100svh;padding-top:var(--nav);overflow:hidden}
+.story__pin .wrap{height:100%;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:center}
+.stage{position:relative;height:min(78svh,820px);aspect-ratio:1005/1600;justify-self:center;background:#fff;border:1px solid rgba(20,22,26,.12);overflow:hidden;border-radius:20px}
+.stage__img{position:absolute;inset:0;overflow:hidden}
+.stage__img>div{position:absolute;inset:0;transform-origin:0 0;will-change:transform}
+.stage__img img{width:100%;height:100%;mix-blend-mode:multiply}
+.stage__tag{position:absolute;left:20px;top:20px;font-size:13px;font-weight:500;background:var(--ink);color:#fff;border-radius:999px;padding:6px 14px}
+.steps{position:relative;min-height:340px}
+.step{position:absolute;inset:0 0 auto 0;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.step.on{opacity:1;transform:none;pointer-events:auto}
+.step .n{font-family:var(--serif);font-size:15px;color:var(--accent);font-weight:600;margin-bottom:12px}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(32px,3.6vw,56px);line-height:1.06;letter-spacing:-.02em;margin:0 0 20px}
+.step p{max-width:40ch;margin:0;font-size:18px;color:#2b2f36}
+.prog{position:absolute;left:0;bottom:-48px;display:flex;gap:8px}
+.prog i{display:block;width:44px;height:3px;background:rgba(20,22,26,.16);border-radius:3px;overflow:hidden}
+.prog i::after{content:"";display:block;height:100%;width:var(--f,0%);background:var(--ink)}
+
+/* DARK BAND */
+.dark{background:var(--dark);color:var(--dark-ink);overflow:hidden}
+.dark .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;min-height:100svh;padding-block:calc(var(--nav) + 24px) 48px;gap:24px}
+.dark h2{color:#fff}
+.dark p{font-size:18px;color:#b9d3ea;max-width:40ch;margin:0 0 28px}
+.dark .btn{border-color:#fff;color:#fff}
+.dark .btn:hover{background:#fff;color:var(--dark)}
+.dark__img{position:relative;overflow:hidden;display:flex;justify-content:flex-end}
+.dark__img img{height:calc(100svh - var(--nav) - 96px);width:auto;max-width:100%;aspect-ratio:1/1;object-fit:cover;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%);transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.dark__img.in img{transform:scale(1)}
+
+/* ADJUST */
+.adjust .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center;min-height:100svh;padding-block:calc(var(--nav) + 24px) 48px;gap:clamp(24px,4vw,64px)}
+.adjust__img{overflow:hidden}
+.adjust__img img{width:100%;aspect-ratio:1/1;object-fit:cover;mix-blend-mode:multiply;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.adjust__img:hover img{transform:scale(1.03)}
+.list{list-style:none;margin:28px 0 0;padding:0}
+.list li{display:flex;justify-content:space-between;gap:24px;padding:16px 0;border-top:1px solid rgba(20,22,26,.14);font-size:18px}
+.list li:last-child{border-bottom:1px solid rgba(20,22,26,.14)}
+.list span{color:var(--muted)}
+
+/* SPECS */
+.specs{background:var(--ground-2)}
+.specs .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,96px);padding-block:clamp(72px,12vh,128px);align-items:start}
+.rows{margin:0}
+.rows div{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:20px 0;border-top:1px solid rgba(20,22,26,.16);transition:padding-left .3s}
+.rows div:last-child{border-bottom:1px solid rgba(20,22,26,.16)}
+.rows div:hover{padding-left:12px}
+.rows dt{font-weight:600}
+.rows dd{margin:0;color:#2b2f36}
+
+/* CLOSE */
+.close{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.close .wrap{padding-block:clamp(72px,14vh,140px) 40px}
+.close h2{color:#fff;max-width:14ch}
+.close .btn--primary{background:#fff;color:var(--ink);border-color:#fff}
+.close .btn--primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.close__name{font-family:var(--serif);font-weight:700;font-size:clamp(64px,17vw,260px);letter-spacing:-.04em;line-height:.9;margin-top:56px;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28);white-space:nowrap}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;color:#b6bac2}
+
+/* WHATSAPP */
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;background:#25d366;display:none;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.22);z-index:30;transition:transform .2s}
+.wa.on{display:flex}
+.wa:hover{transform:translateY(-3px) scale(1.04)}
+.wa svg{width:32px;height:32px;fill:#fff}
+
+/* reveal on load for static blocks */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+  .nav .btn{width:auto;height:40px;padding:0 16px;font-size:14px}
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero__chair{height:auto;order:-1;margin-top:8px}
+  .hero__chair .float{height:auto}
+  .hero__chair img{height:auto;width:100%}
+  .hero__text{padding-block:16px 88px}
+  .facts{display:none}
+  .story{height:520vh}
+  .story__pin .wrap{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;gap:16px;padding-bottom:56px}
+  .stage{height:calc(100svh - var(--nav) - 330px);min-height:240px}
+  .steps{min-height:230px}
+  .step p{font-size:16px}
+  .dark .wrap,.adjust .wrap,.specs .wrap{grid-template-columns:1fr;min-height:0}
+  .dark .wrap{padding-block:calc(var(--nav) + 32px) 0}
+  .dark__img img{height:auto;width:100%}
+  .dark__img img{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 20%);mask-image:linear-gradient(180deg,transparent 0,#000 20%)}
+  .adjust .wrap{padding-block:calc(var(--nav) + 32px) 56px}
+  .rows div{grid-template-columns:1fr;gap:4px}
+  .btn-row .btn,.rv .btn{width:100%;justify-content:center}
+  .btn-row{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  h1 .w>span,.lead,.hero .btn-row,.hero__chair img,.rv{opacity:1!important;transform:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body id="top">
+<!-- Direção: produto, hero com cadeira grande + rolagem com zoom nas partes (foto real), faixa escura com a coluna, calma no fim. Nav split simples, botões pill, fundo plano. -->
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Comfy <b>ErgoMax</b></a>
+    <ul>
+      <li><a href="#partes">Conforto</a></li>
+      <li><a href="#coluna">Coluna</a></li>
+      <li><a href="#ajustes">Ajustes</a></li>
+      <li><a href="#ficha">Ficha</a></li>
+    </ul>
+    <a class="btn btn--primary" href="#pedido" data-wa>Pedir no WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero__text">
+      <p class="eyebrow">Cadeira de escritório · tela mesh preta</p>
+      <h1 aria-label="Cadeira ergonômica Comfy ErgoMax">
+        <span class="w" style="--i:0"><span>Cadeira</span></span>
+        <span class="w" style="--i:1"><span>ergonômica</span></span>
+        <span class="w" style="--i:2"><span>Comfy</span></span>
+        <span class="w" style="--i:3"><span>ErgoMax</span></span>
+      </h1>
+      <p class="lead">Tela mesh que respira no encosto e no assento, estrutura em alumínio e apoio lombar que acompanha a curva da sua coluna.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#pedido" data-wa>Pedir no WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="#partes">Ver a cadeira por dentro</a>
+      </div>
+    </div>
+    <div class="hero__chair" data-chair>
+      <div class="float" style="height:100%"><img src="assets/img/three-quarter.jpg" alt="Cadeira ergonômica Comfy ErgoMax preta com apoio de cabeça, vista em três quartos" width="1600" height="1600" fetchpriority="high"></div>
+    </div>
+  </div>
+  <div class="facts" aria-hidden="false">
+    <div><b>Tela mesh</b>encosto e assento</div>
+    <div><b>Alumínio</b>base de 5 pontas</div>
+    <div><b>Lombar</b>ajustável</div>
+  </div>
+</section>
+
+<section class="story" id="partes" aria-label="Partes da cadeira">
+  <div class="story__pin">
+    <div class="wrap">
+      <div class="stage">
+        <div class="stage__img" id="stageImg"><div id="stageMove"><img src="assets/img/front.jpg" alt="Cadeira Comfy ErgoMax preta vista de frente" width="1005" height="1600" loading="lazy"></div></div>
+        <span class="stage__tag" id="stageTag">Tela mesh</span>
+      </div>
+      <div class="steps" id="steps">
+        <div class="step on"><div class="n">01</div><h2>Tela mesh que respira</h2><p>Encosto e assento em tela mesh respirável. O ar circula e você não esquenta durante o dia de trabalho.</p></div>
+        <div class="step"><div class="n">02</div><h2>Alumínio resistente</h2><p>Estrutura em alumínio, base de 5 pontas e rodízios suaves para se mover sem esforço.</p></div>
+        <div class="step"><div class="n">03</div><h2>Apoios de braço multifuncionais</h2><p>Os apoios se ajustam para você apoiar os braços do jeito certo, sem levantar os ombros.</p></div>
+        <div class="step"><div class="n">04</div><h2>Lombar integrada</h2><p>Suporte lombar integrado e ajustável para a curvatura da sua coluna.</p></div>
+        <div class="prog" id="prog"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="coluna">
+  <div class="wrap">
+    <div class="rv">
+      <h2>Feita para a sua coluna</h2>
+      <p>Pescoço, ombros e lombar ficam apoiados enquanto você trabalha. A estrutura de alumínio polido sustenta o encosto reclinável.</p>
+      <a class="btn btn--ghost" href="#pedido" data-wa>Pedir no WhatsApp</a>
+    </div>
+    <div class="dark__img" id="darkImg"><img src="assets/img/coluna.jpg" alt="Ilustração da coluna apoiada na cadeira ErgoMax: pescoço, ombros e lombar" width="1600" height="1600" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="adjust" id="ajustes">
+  <div class="wrap">
+    <div class="adjust__img rv"><img src="assets/img/regulagens.jpg" alt="Cadeira ErgoMax vista por trás mostrando as regulagens de encosto, lombar e braços" width="1600" height="1600" loading="lazy"></div>
+    <div class="rv">
+      <h2>Regule do seu jeito</h2>
+      <p style="max-width:40ch;margin:0;color:#2b2f36">Cada pessoa senta de um jeito. Ajuste a cadeira ao seu corpo em poucos segundos.</p>
+      <ul class="list">
+        <li>Encosto <span>reclinável</span></li>
+        <li>Altura do assento <span>regulável</span></li>
+        <li>Altura do encosto <span>70 mm de curso</span></li>
+        <li>Apoios de braço <span>multifuncionais</span></li>
+        <li>Apoio lombar <span>integrado e ajustável</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="specs" id="ficha">
+  <div class="wrap">
+    <div class="rv"><h2>Ficha da cadeira</h2></div>
+    <dl class="rows rv">
+      <div><dt>Modelo</dt><dd>Comfy ErgoMax Tela Mesh Preta</dd></div>
+      <div><dt>Revestimento</dt><dd>Tela mesh respirável no encosto e no assento</dd></div>
+      <div><dt>Estrutura</dt><dd>Alumínio resistente</dd></div>
+      <div><dt>Base</dt><dd>5 pontas, com rodízios suaves</dd></div>
+      <div><dt>Ajustes</dt><dd>Encosto reclinável, altura do assento e apoios de braço multifuncionais</dd></div>
+      <div><dt>Apoio lombar</dt><dd>Integrado e ajustável para a curvatura da coluna</dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer class="close" id="pedido">
+  <div class="wrap">
+    <h2 class="rv">Peça a sua ErgoMax</h2>
+    <div class="rv"><a class="btn btn--primary" href="#top" data-wa>Pedir no WhatsApp
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="close__name" aria-hidden="true" data-par="0.05">Comfy ErgoMax</div>
+    <div class="legal"><span>Comfy ErgoMax</span><span>© 2026</span></div>
+  </div>
+</footer>
+
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.24-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.1.89.9-3.02-.2-.31A8.2 8.2 0 1 1 12.04 20.1Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.36.99 2.52c.12.17 1.71 2.6 4.14 3.65 2.43 1.04 2.43.7 2.87.66.44-.04 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.28Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function(s,c){return (c||document).querySelector(s)};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+  /* WhatsApp: número vem de config/site.json */
+  fetch('config/site.json').then(function(r){return r.json()}).then(function(c){
+    var w=c&&c.whatsapp, n=w&&String(w.number||'').replace(/\D/g,'');
+    if(!w||!w.enabled||!n) return;
+    var url='https://wa.me/'+n+'?text='+encodeURIComponent('Olá! Quero a cadeira Comfy ErgoMax.');
+    var fab=$('#wa'); fab.href=url; fab.classList.add('on');
+    $$('[data-wa]').forEach(function(a){a.href=url;a.target='_blank';a.rel='noopener noreferrer'});
+  }).catch(function(){});
+
+  /* revelações */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  $$('.rv,.dark__img').forEach(function(el){io.observe(el)});
+
+  /* hero: ponteiro e rolagem */
+  var chair=$('[data-chair]'), px=0, py=0, tx=0, ty=0;
+  if(!reduce && matchMedia('(pointer:fine)').matches){
+    addEventListener('mousemove',function(e){tx=(e.clientX/innerWidth-.5)*2;ty=(e.clientY/innerHeight-.5)*2});
+  }
+  var pars=$$('[data-par]');
+
+  /* história: câmera que dá zoom nas partes da foto */
+  var story=$('#partes'), img=$('#stageImg'), mv=$('#stageMove'), steps=$$('.step'), bars=$$('#prog i'), tag=$('#stageTag');
+  var tags=['Tela mesh','Alumínio e rodízios','Apoios de braço','Apoio lombar'];
+  // foco (fração da foto) e zoom de cada parte
+  var cam=[{x:.51,y:.30,s:1.9},{x:.50,y:.84,s:1.7},{x:.17,y:.43,s:2.2},{x:.50,y:.43,s:2.1}];
+  var cur=0, last=-1;
+  function ss(t){return t*t*(3-2*t)}
+  function frame(){
+    // hero
+    px+=(tx-px)*.06; py+=(ty-py)*.06;
+    var im=chair&&chair.querySelector('img');
+    if(im&&!reduce) im.parentNode.style.translate=(px*14)+'px '+(py*8)+'px';
+    var sy=scrollY;
+    pars.forEach(function(el){
+      var f=parseFloat(el.dataset.par), r=el.getBoundingClientRect();
+      var d=(r.top+r.height/2-innerHeight/2);
+      el.style.transform='translate3d('+(f*d*.5)+'px,0,0)';
+    });
+    // story
+    var r=story.getBoundingClientRect(), total=story.offsetHeight-innerHeight;
+    var p=Math.min(1,Math.max(0,-r.top/total));
+    var n=cam.length, seg=p*n*.999, i=Math.min(n-1,Math.floor(seg)), f=seg-i;
+    // segura em cada parte e se move no final do trecho
+    var m=f<.6?0:ss((f-.6)/.4), a=cam[i], b=cam[Math.min(n-1,i+1)];
+    var x=a.x+(b.x-a.x)*m, y=a.y+(b.y-a.y)*m, s=a.s+(b.s-a.s)*m;
+    var w=img.clientWidth, h=img.clientHeight;
+    mv.style.transform='translate('+(w/2-x*w*s)+'px,'+(h/2-y*h*s)+'px) scale('+s+')';
+    var act=m>.5?Math.min(n-1,i+1):i;
+    if(act!==last){
+      steps.forEach(function(el,k){el.classList.toggle('on',k===act)});
+      tag.textContent=tags[act]; last=act;
+    }
+    bars.forEach(function(bar,k){
+      var v=p*n-k; bar.style.setProperty('--f',Math.max(0,Math.min(1,v))*100+'%');
+    });
+    requestAnimationFrame(frame);
+  }
+  if(reduce){
+    // sem movimento: mostra a cadeira inteira
+    mv.style.transform='none';
+    var firstFrame=function(){var w=img.clientWidth,h=img.clientHeight;mv.style.transform='translate('+(w/2-cam[0].x*w*cam[0].s)+'px,'+(h/2-cam[0].y*h*cam[0].s)+'px) scale('+cam[0].s+')'};
+    firstFrame();
+  } else requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
